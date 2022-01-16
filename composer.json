@@ -2,6 +2,7 @@
   "name": "koraycicekciogullari/hydro-page",
   "description": "A hydro page",
   "license": "MIT",
+  "version": "1.0.0",
   "keywords": [
     "hydro",
     "page"
