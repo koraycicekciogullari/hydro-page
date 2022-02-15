@@ -32,6 +32,8 @@ class PageResource extends JsonResource
             'show_in_menu'      =>  $this->show_in_menu,
             'show_in_footer'    =>  $this->show_in_footer,
             'image'             =>  collect($this->media)->whereIn('collection_name', 'default')->first(),
+            'gallery'           =>  collect($this->media)->whereIn('collection_name', 'gallery')
+                ->sortBy('order_column')->all(),
         ];
     }
 }
